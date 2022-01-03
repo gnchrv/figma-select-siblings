@@ -1,10 +1,11 @@
-if (figma.command == 'first-command') {
-    console.log('The first command was executed')
+import { selectUp, selectDown } from "./lib"
+
+if (figma.command == 'select-up') {
+    selectUp()
     figma.closePlugin()
 }
 
-if (figma.command == 'second-command') {
-    console.log('The second command was executed')
+if (figma.command == 'select-down') {
+    selectDown()
     figma.closePlugin()
 }
-

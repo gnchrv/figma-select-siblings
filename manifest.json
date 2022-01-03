@@ -1,17 +1,17 @@
 {
-    "name": "Plugin Name",
-    "id": "000000000000000000",
+    "name": "Select Siblings",
+    "id": "1023271295543606907",
     "api": "1.0.0",
     "editorType": ["figma", "figjam"],
     "main": "dist/index.js",
     "menu": [
         {
-            "name": "First Command",
-            "command": "first-command"
+            "name": "Select Siblings Up",
+            "command": "select-up"
         },
         {
-            "name": "Second Command",
-            "command": "second-command"
+            "name": "Select Siblings Down",
+            "command": "select-down"
         }
     ]
 }
