@@ -25,6 +25,15 @@ function getNodesParents(nodes: readonly SceneNode[]): Set<BaseNode & ChildrenMi
     return parents
 }
 
+/**
+ * Проверяет, не является ли элемент целым документом
+ * @param {BaseNode} node Проверяемый элемент
+ * @returns {node is DocumentNode} Результат проверки
+ */
+function isDocumentNode(node: BaseNode): node is DocumentNode {
+    return node.type === 'DOCUMENT'
+}
+
 export function selectUp() {
     // Получаем набор выделенных элементов
     let selection = figma.currentPage.selection
