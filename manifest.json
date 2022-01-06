@@ -12,6 +12,14 @@
         {
             "name": "Select Siblings Down",
             "command": "select-down"
+        },
+        {
+            "name": "Select the First",
+            "command": "select-first"
+        },
+        {
+            "name": "Select the Last",
+            "command": "select-last"
         }
     ]
 }
