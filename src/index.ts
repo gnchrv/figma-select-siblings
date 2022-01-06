@@ -1,4 +1,5 @@
-import { selectUp, selectDown } from "./lib"
+import selectUp from './select-up'
+import selectDown from './select-down'
 
 if (figma.command == 'select-up') {
     selectUp()
