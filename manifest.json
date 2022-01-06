@@ -16,6 +16,10 @@
         {
             "name": "Select First Elements",
             "command": "select-first"
+        },
+        {
+            "name": "Select Last Elements",
+            "command": "select-last"
         }
     ]
 }
