@@ -12,6 +12,10 @@
         {
             "name": "Select Siblings Down",
             "command": "select-down"
+        },
+        {
+            "name": "Select First Elements",
+            "command": "select-first"
         }
     ]
 }
