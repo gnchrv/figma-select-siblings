@@ -14,11 +14,11 @@
             "command": "select-down"
         },
         {
-            "name": "Select First Elements",
+            "name": "Select the First",
             "command": "select-first"
         },
         {
-            "name": "Select Last Elements",
+            "name": "Select the Last",
             "command": "select-last"
         }
     ]
