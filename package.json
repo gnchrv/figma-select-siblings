@@ -1,7 +1,7 @@
 {
-  "name": "figma-plugin-name",
+  "name": "Select Siblings",
   "version": "1.0.0",
-  "description": "Figma Plugin Description",
+  "description": "Figma plugin that allows to quickly select elements on the same level of hierarchy",
   "scripts": {
     "build": "webpack",
     "watch": "nodemon --watch ./src --ext ts --exec npm run build"
