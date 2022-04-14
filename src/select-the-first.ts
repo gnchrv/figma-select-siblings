@@ -1,9 +1,9 @@
 import { getNodesParents, isDocumentNode } from './lib'
 
 /**
- * Выделяет визуально последние элементы в контейнерах с авто-лейаутом
+ * Выделяет визуально первые элементы в контейнерах с авто-лейаутом
  */
-export default function selectLast() {
+export default function selectTheFirst() {
     // Получаем набор выделенных элементов
     let selection = figma.currentPage.selection
 
@@ -24,8 +24,8 @@ export default function selectLast() {
         */
         if (isDocumentNode(parent)) continue
 
-        // Получаем последний элемент в списке (визуально он тоже будет последним, но в иерархии слоёв — первым)
-        const firstElement = parent.children.slice(-1)[0]
+        // Получаем первый элемент в списке (визуально он тоже будет первым, но в иерархии слоёв — последним)
+        const firstElement = parent.children[0]
 
         // Добавляем его в список элементов для выделения
         elementsToSelect.push(firstElement)

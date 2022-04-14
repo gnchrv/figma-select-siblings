@@ -6,20 +6,20 @@
     "main": "dist/index.js",
     "menu": [
         {
-            "name": "Select Siblings Up",
-            "command": "select-up"
+            "name": "Select to the Beginning",
+            "command": "select-to-the-beginning"
         },
         {
-            "name": "Select Siblings Down",
-            "command": "select-down"
+            "name": "Select to the End",
+            "command": "select-to-the-end"
         },
         {
             "name": "Select the First",
-            "command": "select-first"
+            "command": "select-the-first"
         },
         {
             "name": "Select the Last",
-            "command": "select-last"
+            "command": "select-the-last"
         }
     ]
 }

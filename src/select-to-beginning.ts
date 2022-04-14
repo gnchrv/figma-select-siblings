@@ -1,9 +1,9 @@
-import {getNodesParents, isDocumentNode} from './lib'
+import { getNodesParents, isDocumentNode } from './lib'
 
 /**
  * Добавляет к выделению элементы, визуально лежащие выше (левее) выбранных
  */
-export default function selectUp() {
+export default function selectToTheBeginning() {
     // Получаем набор выделенных элементов
     let selection = figma.currentPage.selection
 
