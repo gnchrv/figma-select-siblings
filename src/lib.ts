@@ -41,6 +41,6 @@ export function getNodesParents(nodes: readonly SceneNode[]): Set<(SceneNode | P
  * @param {BaseNode} node Проверяемый элемент
  * @returns {node is DocumentNode} Результат проверки
  */
-export function isDocumentNode(node: BaseNode): node is DocumentNode {
+function isDocumentNode(node: BaseNode): node is DocumentNode {
     return node.type === 'DOCUMENT'
 }

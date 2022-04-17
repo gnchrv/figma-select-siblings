@@ -1,11 +1,11 @@
-import { getNodesParents, isDocumentNode } from './lib'
+import { getNodesParents } from './lib'
 
 /**
- * Добавляет к выделению элементы, визуально лежащие ниже (правее) выбранных
+ * Добавляет к выделению элементы, лежащие после того, который уже был выделен
  */
 export default function selectToTheEnd() {
     // Получаем набор выделенных элементов
-    let selection = figma.currentPage.selection
+    let { selection } = figma.currentPage
 
     // Если не выбрано ни одного элемента, выходим
     if (!selection.length) return
@@ -13,7 +13,7 @@ export default function selectToTheEnd() {
     // Получаем набор родителей выбранных элементов
     const parents = getNodesParents(selection)
 
-    // Создаём заготовку, в которую будем добавлять элементы, которые необходимо выделить
+    // Создаём заготовку, в которую будем добавлять элементы, которые нужно будет выделить
     const elementsToSelect: SceneNode[] = []
 
     // Проходимся по каждому родителю
