@@ -1,5 +1,5 @@
 {
-  "name": "Select Siblings",
+  "name": "figma-select-siblings",
   "version": "1.0.0",
   "description": "Figma plugin that allows to quickly select elements on the same level of hierarchy",
   "scripts": {
