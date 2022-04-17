@@ -1,8 +1,7 @@
 # Select Siblings
+> This is a Figma plugin that helps to quickly select elements inside auto-layout frames. 
 
 ![Plugin Cover](assets/plugin-cover.png)
-
-This is a Figma plugin that helps to quickly select elements inside auto-layout frames. 
 
 ## Roadmap
 Here’s a list of commands I plan to support and their current status:
@@ -20,4 +19,4 @@ Here’s a list of commands I plan to support and their current status:
 - [ ] **Add the Next Element**. Similarly, adds the next one.
 
 ## Feedback and Contribution
-The plugin is currently work-in-progress. If you have any ideas or feature requests, leave a comment in [Figma Community](https://www.figma.com/community/plugin/1023271295543606907) or [create an issue](https://github.com/gnchrv/figma-select-siblings/issues) here. Any contributions are also would be highly appreciated, so feel free to make a pull request.
+The plugin is currently work-in-progress. If you have any ideas or feature requests, leave a comment in [Figma Community](https://www.figma.com/community/plugin/1023271295543606907) or [create an issue](https://github.com/gnchrv/figma-select-siblings/issues) here. Any contributions are also would be highly appreciated, so feel free to [make a pull request](https://github.com/gnchrv/figma-select-siblings/pulls).
