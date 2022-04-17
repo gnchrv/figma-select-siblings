@@ -20,6 +20,14 @@
         {
             "name": "Select the Last",
             "command": "select-the-last"
+        },
+        {
+            "name": "Expand a Selection Backward",
+            "command": "expand-backward"
+        },
+        {
+            "name": "Expand a Selection Forward",
+            "command": "expand-forward"
         }
     ]
 }
