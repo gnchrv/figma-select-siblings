@@ -13,7 +13,7 @@ Here’s a list of commands I plan to support and their current status:
 - [x] **Select the First**. Basically, select the first elements in a list
 - [x] **Select the Last**. Does the same, but with the last element.
 - [x] **Expand a Selection Backward**. Adds the previous element to a selection.
-- [x] **Expand a Selection Backward**. Similarly, adds the next one.
+- [x] **Expand a Selection Forward**. Similarly, adds the next one.
 - [ ] **Select Between**. Selects the elements between those that have been already selected.
 
 ## Feedback and Contribution
