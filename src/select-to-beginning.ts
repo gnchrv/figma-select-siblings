@@ -1,3 +1,4 @@
+import { NothingSelectedError } from './errors'
 import { getNodesParents } from './lib'
 
 /**
@@ -8,7 +9,7 @@ export default function selectToTheBeginning() {
     let { selection } = figma.currentPage
 
     // Если не выбрано ни одного элемента, выходим
-    if (!selection.length) return
+    if (!selection.length) throw new NothingSelectedError()
 
     // Получаем набор родителей выбранных элементов
     const parents = getNodesParents(selection)

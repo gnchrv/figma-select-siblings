@@ -5,32 +5,34 @@ import selectTheLast from './select-the-last'
 import expandBackward from './expand-backward'
 import expandForward from './expand-forward'
 
-if (figma.command == 'select-to-the-beginning') {
-    selectToTheBeginning()
-    figma.closePlugin()
-}
+try {
+    switch (figma.command) {
+        case 'select-to-the-beginning':
+            selectToTheBeginning()
+            break
 
-if (figma.command == 'select-to-the-end') {
-    selectToTheEnd()
-    figma.closePlugin()
-}
+        case 'select-to-the-end':
+            selectToTheEnd()
+            break
 
-if (figma.command == 'select-the-first') {
-    selectTheFirst()
-    figma.closePlugin()
-}
+        case 'select-the-first':
+            selectTheFirst()
+            break
 
-if (figma.command == 'select-the-last') {
-    selectTheLast()
-    figma.closePlugin()
-}
+        case 'select-the-last':
+            selectTheLast()
+            break
 
-if (figma.command == 'expand-backward') {
-    expandBackward()
-    figma.closePlugin()
-}
+        case 'expand-backward':
+            expandBackward()
+            break
 
-if (figma.command == 'expand-forward') {
-    expandForward()
+        case 'expand-forward':
+            expandForward()
+            break
+    }
     figma.closePlugin()
+
+} catch (e) {
+    figma.closePlugin(e.message)
 }
