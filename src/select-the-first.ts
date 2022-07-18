@@ -1,3 +1,4 @@
+import { NothingSelectedError } from './errors'
 import { getNodesParents } from './lib'
 
 /**
@@ -8,7 +9,7 @@ export default function selectTheFirst() {
     let { selection } = figma.currentPage
 
     // Если не выбрано ни одного элемента, выходим
-    if (!selection.length) throw new Error('Select at least one element')
+    if (!selection.length) throw new NothingSelectedError()
 
     // Создаём заготовку для элементов, которые будет необходимо выделить
     const elementsToSelect: SceneNode[] = []

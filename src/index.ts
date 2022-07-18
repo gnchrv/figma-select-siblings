@@ -5,56 +5,34 @@ import selectTheLast from './select-the-last'
 import expandBackward from './expand-backward'
 import expandForward from './expand-forward'
 
-if (figma.command == 'select-to-the-beginning') {
-    try {
-        selectToTheBeginning()
-        figma.closePlugin()
-    } catch (e) {
-        figma.closePlugin(e.message)
-    }
-}
+try {
+    switch (figma.command) {
+        case 'select-to-the-beginning':
+            selectToTheBeginning()
+            break
 
-if (figma.command == 'select-to-the-end') {
-    try {
-        selectToTheEnd()
-        figma.closePlugin()
-    } catch (e) {
-        figma.closePlugin(e.message)
-    }
-}
+        case 'select-to-the-end':
+            selectToTheEnd()
+            break
 
-if (figma.command == 'select-the-first') {
-    try {
-        selectTheFirst()
-        figma.closePlugin()
-    } catch (e) {
-        figma.closePlugin(e.message)
-    }
-}
+        case 'select-the-first':
+            selectTheFirst()
+            break
 
-if (figma.command == 'select-the-last') {
-    try {
-        selectTheLast()
-        figma.closePlugin()
-    } catch (e) {
-        figma.closePlugin(e.message)
-    }
-}
+        case 'select-the-last':
+            selectTheLast()
+            break
 
-if (figma.command == 'expand-backward') {
-    try {
-        expandBackward()
-        figma.closePlugin()
-    } catch (e) {
-        figma.closePlugin(e.message)
-    }
-}
+        case 'expand-backward':
+            expandBackward()
+            break
 
-if (figma.command == 'expand-forward') {
-    try {
-        expandForward()
-        figma.closePlugin()
-    } catch (e) {
-        figma.closePlugin(e.message)
+        case 'expand-forward':
+            expandForward()
+            break
     }
+    figma.closePlugin()
+
+} catch (e) {
+    figma.closePlugin(e.message)
 }

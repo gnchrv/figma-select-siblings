@@ -1,3 +1,5 @@
+import { NothingSelectedError } from "./errors"
+
 /**
  * Добавляет к выделению предыдущий элемент
  */
@@ -6,7 +8,7 @@ export default function expandBackward() {
     let { selection } = figma.currentPage
 
     // Если не выбрано ни одного элемента, выходим
-    if (!selection.length) throw new Error('Select at least one element')
+    if (!selection.length) throw new NothingSelectedError()
 
     // Создаём заготовку для элементов, которые нужно будет выделить
     const elementsToSelect: SceneNode[] = []
