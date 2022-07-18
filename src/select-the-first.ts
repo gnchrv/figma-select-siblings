@@ -8,7 +8,7 @@ export default function selectTheFirst() {
     let { selection } = figma.currentPage
 
     // Если не выбрано ни одного элемента, выходим
-    if (!selection.length) return
+    if (!selection.length) throw new Error('Select at least one element')
 
     // Создаём заготовку для элементов, которые будет необходимо выделить
     const elementsToSelect: SceneNode[] = []

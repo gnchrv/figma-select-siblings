@@ -6,31 +6,55 @@ import expandBackward from './expand-backward'
 import expandForward from './expand-forward'
 
 if (figma.command == 'select-to-the-beginning') {
-    selectToTheBeginning()
-    figma.closePlugin()
+    try {
+        selectToTheBeginning()
+        figma.closePlugin()
+    } catch (e) {
+        figma.closePlugin(e.message)
+    }
 }
 
 if (figma.command == 'select-to-the-end') {
-    selectToTheEnd()
-    figma.closePlugin()
+    try {
+        selectToTheEnd()
+        figma.closePlugin()
+    } catch (e) {
+        figma.closePlugin(e.message)
+    }
 }
 
 if (figma.command == 'select-the-first') {
-    selectTheFirst()
-    figma.closePlugin()
+    try {
+        selectTheFirst()
+        figma.closePlugin()
+    } catch (e) {
+        figma.closePlugin(e.message)
+    }
 }
 
 if (figma.command == 'select-the-last') {
-    selectTheLast()
-    figma.closePlugin()
+    try {
+        selectTheLast()
+        figma.closePlugin()
+    } catch (e) {
+        figma.closePlugin(e.message)
+    }
 }
 
 if (figma.command == 'expand-backward') {
-    expandBackward()
-    figma.closePlugin()
+    try {
+        expandBackward()
+        figma.closePlugin()
+    } catch (e) {
+        figma.closePlugin(e.message)
+    }
 }
 
 if (figma.command == 'expand-forward') {
-    expandForward()
-    figma.closePlugin()
+    try {
+        expandForward()
+        figma.closePlugin()
+    } catch (e) {
+        figma.closePlugin(e.message)
+    }
 }
