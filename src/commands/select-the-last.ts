@@ -1,17 +1,17 @@
-import { NothingSelectedError } from './errors'
-import { getNodesParents } from './lib'
+import { NothingSelectedError } from '../errors'
+import { getNodesParents } from '../lib'
 
 /**
- * Выделяет первые элементы в контейнерах с авто-лейаутом
+ * Выделяет последние элементы в контейнерах с авто-лейаутом
  */
-export default function selectTheFirst() {
+export default function selectTheLast() {
     // Получаем набор выделенных элементов
     let { selection } = figma.currentPage
 
     // Если не выбрано ни одного элемента, выходим
     if (!selection.length) throw new NothingSelectedError()
 
-    // Создаём заготовку для элементов, которые будет необходимо выделить
+    // Создаём заготовку для элементов, которые нужно будет выделить
     const elementsToSelect: SceneNode[] = []
 
     // Собираем список родителей выделенных элементов
@@ -20,8 +20,8 @@ export default function selectTheFirst() {
     // Пробегаемся по списку родителей
     for (const parent of parents) {
 
-        // Получаем первый элемент в списке (визуально он тоже будет первым, но в панеле слоёв — последним)
-        const firstElement = parent.children[0]
+        // Получаем последний элемент в списке (визуально он тоже будет последним, но в панеле слоёв — первым)
+        const firstElement = parent.children.slice(-1)[0]
 
         // Добавляем его в список элементов для выделения
         elementsToSelect.push(firstElement)

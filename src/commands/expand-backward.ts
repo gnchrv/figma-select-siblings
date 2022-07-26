@@ -1,4 +1,4 @@
-import { NothingSelectedError } from "./errors"
+import { NothingSelectedError } from "../errors"
 
 /**
  * Добавляет к выделению предыдущий элемент

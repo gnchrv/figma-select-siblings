@@ -1,5 +1,5 @@
-import { NothingSelectedError } from './errors'
-import { getNodesParents } from './lib'
+import { NothingSelectedError } from '../errors'
+import { getNodesParents } from '../lib'
 
 /**
  * Добавляет к выделению элементы, лежащие перед тем, который уже был выделен

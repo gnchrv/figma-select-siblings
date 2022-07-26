@@ -1,9 +1,9 @@
-import selectToTheBeginning from './select-to-beginning'
-import selectToTheEnd from './select-to-the-end'
-import selectTheFirst from './select-the-first'
-import selectTheLast from './select-the-last'
-import expandBackward from './expand-backward'
-import expandForward from './expand-forward'
+import selectToTheBeginning from './commands/select-to-beginning'
+import selectToTheEnd from './commands/select-to-the-end'
+import selectTheFirst from './commands/select-the-first'
+import selectTheLast from './commands/select-the-last'
+import expandBackward from './commands/expand-backward'
+import expandForward from './commands/expand-forward'
 
 try {
     switch (figma.command) {
