@@ -1,5 +1,5 @@
-# Select Siblings ![installs](https://img.shields.io/endpoint?url=https://yuanqing.github.io/figma-plugins-stats/plugin/1023271295543606907/installs.json) ![likes](https://img.shields.io/endpoint?url=https://yuanqing.github.io/figma-plugins-stats/plugin/1023271295543606907/likes.json)
-> This is a Figma plugin that helps to quickly select elements inside auto-layout frames. 
+# Select Siblings ![installs](https://img.shields.io/endpoint?url=https://yuanqing.github.io/figma-plugins-stats/plugin/1023271295543606907/runs.json) ![likes](https://img.shields.io/endpoint?url=https://yuanqing.github.io/figma-plugins-stats/plugin/1023271295543606907/likes.json)
+> This is a Figma plugin that helps quickly select elements inside auto-layout frames. 
 
 ![Plugin Cover](assets/plugin-cover.png)
 
