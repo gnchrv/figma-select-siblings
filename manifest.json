@@ -14,7 +14,7 @@
             "command": "select-to-the-end"
         },
         {
-            "name": "Select between Elements",
+            "name": "Select Between Elements",
             "command": "select-between"
         },
         {
