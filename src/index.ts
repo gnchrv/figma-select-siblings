@@ -4,6 +4,7 @@ import selectTheFirst from './commands/select-the-first'
 import selectTheLast from './commands/select-the-last'
 import expandBackward from './commands/expand-backward'
 import expandForward from './commands/expand-forward'
+import selectBetween from './commands/select-between'
 
 try {
     switch (figma.command) {
@@ -13,6 +14,10 @@ try {
 
         case 'select-to-the-end':
             selectToTheEnd()
+            break
+
+        case 'select-between':
+            selectBetween()
             break
 
         case 'select-the-first':
